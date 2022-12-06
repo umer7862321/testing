@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    
+    <!-- adminhtml_sales_order_create_process_data_after -->
+    <event name="sales_order_invoice_save_after">
+        <observer name="magento_orderevent_create" instance="Dell\Laptop\Observer\OrderObserver" />
+    </event>
+   
+</config>
